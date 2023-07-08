@@ -1,8 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import { render } from '@testing-library/react';
+import React from 'react';
 import ClassComponent from './component/Class';
 import Greetings from './component/Greetings';
+import CreateState from './component/CreateState';
 
 // function App() {
 //   return (
@@ -32,7 +31,8 @@ export default class App extends React.Component{
     return(
       <>
          <ClassComponent type="Akinola"/>
-         <Greetings />
+         {/* <Greetings /> */}
+         <CreateState/>
       </>
     )
   }
