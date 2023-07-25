@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Greetings extends Component {
 
   render() {
-   const date = new date();
+   const date = new Date();
     const hours = date.getHours();
 
     let timeofDay
