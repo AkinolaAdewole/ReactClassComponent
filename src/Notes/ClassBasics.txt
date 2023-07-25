@@ -1,0 +1,38 @@
+In JavaScript ES6, you can define classes using the class keyword. Classes are a way to create objects with shared properties and 
+methods. 
+
+// Define a class named "Person"
+class Person {
+  // Constructor to initialize object properties
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  // Method to display information about the person
+  displayInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+  }
+}
+
+// Create an instance of the class
+const person1 = new Person('John', 30);
+const person2 = new Person('Alice', 25);
+
+// Call the method on the instances
+person1.displayInfo(); // Output: Name: John, Age: 30
+person2.displayInfo(); // Output: Name: Alice, Age: 25
+
+
+In this example, we have defined a class named Person. The constructor method is a special method that is called when an instance of 
+the class is created using the new keyword. It allows us to initialize the object's properties. In this case, we have two properties, 
+name and age.
+
+We also have a method called displayInfo() that is shared among all instances of the Person class. This method can access the 
+instance's properties using the this keyword.
+
+To create an instance of the class, we use the new keyword followed by the class name and pass any required arguments to the 
+constructor.
+
+Classes in ES6 provide a clean and concise syntax for object-oriented programming in JavaScript, making it easier to work with 
+complex data structures and behaviors. They are a powerful addition to the language, improving code organization and reusability.

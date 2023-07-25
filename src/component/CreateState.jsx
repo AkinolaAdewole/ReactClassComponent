@@ -5,6 +5,12 @@ export default class CreateState extends Component {
     state={
            goOut:"Yes"
     }
+
+    toggleOut(){
+      this.setState(prevState=>{
+        return prevState==="Yes" ? "No" : "Yes"
+      })
+    }
   render() {
     return (
       <>
