@@ -9,7 +9,7 @@ export default class CreateState extends Component {
     toggleOut=()=>{
       this.setState(prevState=>{
         return {
-          goOut:prevState==="Yes" ? "No" : "Yes"
+          goOut:prevState.goOut==="Yes" ? "No" : "Yes"
         }
       })
     }
