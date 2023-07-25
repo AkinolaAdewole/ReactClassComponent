@@ -6,16 +6,21 @@ export default class CreateState extends Component {
            goOut:"Yes"
     }
 
-    toggleOut(){
+    toggleOut=()=>{
       this.setState(prevState=>{
-        return prevState==="Yes" ? "No" : "Yes"
+        return {
+          goOut:prevState==="Yes" ? "No" : "Yes"
+        }
       })
     }
   render() {
     return (
       <>
-        <h3>Shoud I go out?</h3>
-        <h3>{this.state.goOut}</h3>
+          <h3>Shoud I go out?</h3>
+          <div onClick={this.toggleOut}>
+             <h3>{this.state.goOut}</h3>
+          </div>
+      
       </>
     )
   }
