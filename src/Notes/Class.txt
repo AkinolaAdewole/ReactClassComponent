@@ -1,0 +1,22 @@
+Class in JavaScript is a blueprint way for creating objects that have the same properties and have access to the same method. 
+
+In JavaScript ES6 (ECMAScript 2015) and later versions, you can create classes to define objects and their behavior using a more 
+structured and object-oriented approach. The class syntax provides a cleaner and more familiar way to define constructor functions and 
+prototype-based inheritance.
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+// Creating an object from the class
+const person1 = new Person('Alice', 30);
+
+// Calling the method on the object
+person1.sayHello(); // Output: "Hello, my name is Alice and I am 30 years old."
